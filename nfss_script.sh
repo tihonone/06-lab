@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -v
 yum install nfs-utils -y
 
 systemctl enable firewalld --now
