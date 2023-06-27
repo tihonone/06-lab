@@ -5,12 +5,6 @@ Vagrant.configure(2) do |config|
   config.vm.box = "centos/7"
   config.vm.box_version = "2004.01"
 
-#  config.vm.provision "ansible" do |ansible|
-#    ansible.verbose = "vvv"
-#    ansible.playbook = "playbook.yml"
-#    ansible.become = "true"
-#  end
-
   config.vm.provider "virtualbox" do |v|
     v.memory = 256
     v.cpus = 1
